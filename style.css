@@ -1,0 +1,270 @@
+body{width:100%}
+:root{
+
+}
+.logo img {
+    background: lightskyblue;
+    float: left;
+    padding: 0;
+    position: relative;
+    width: 50px;
+    height:51px;
+}
+.logo div{
+    color: black;
+    background: lightskyblue;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    height: 19px;
+}
+.search{
+    background: white;
+    display: block;
+    float: right;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+/*for tablets*/
+@media screen and (min-width:768px) {
+    .search {
+        width: 19%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .search {
+        width: 35%;
+    }
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+    display: grid;
+}
+/*for screens*/
+@media screen and (min-width:768px) {
+    .list {
+        display: block;
+    }
+}
+.list li {
+    float: left;
+}
+
+.list li a, .dropbtn {
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 23px;
+    align-items: center;
+}
+
+.list li a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+.list li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightskyblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+h1{
+    color: yellow;
+    text-align: center;
+    line-height: 240px;
+    font-family: 'Sofia', cursive;
+    font-size: xxx-large;
+    height: 15rem;
+    background-image: url("https://www.i-com.it/wp-content/uploads/2017/11/mediterranean_gateway.jpg");
+    background-size: 100%;
+}
+
+.league {
+    border-collapse: collapse;
+    width: 100%;
+    margin:15px 0 0 0;
+    padding: 0;
+    width: max-content;
+}
+@media screen and (min-width:768px) {
+    .league {
+        width: 100%;
+    }
+}
+
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+th {
+    color: white;
+    background-color: gray ;
+    text-align: left;
+}
+.league tr:nth-child(odd){
+    background-color: lightgray;
+}
+h2{
+    margin: 3em 0 0 0;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    background-image: linear-gradient(to right, blue, white,blue);
+}
+
+article{
+    float: left;
+    width: 100%;
+    display: grid;
+}
+@media screen and (min-width:468px) {
+    article {
+        width: 48%;
+        padding-left: 2%;
+    }
+}
+@media screen and (min-width:1024px) {
+    article {
+        width: 30%;
+        padding-left: 3%;
+    }
+}
+article img {
+    float: left;
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tags li  {
+    display: inline;
+    font-weight: bold;
+    color: gray;
+    font-family: Georgia, fantasy;
+}
+.author, .date {
+    margin:7px  0 0 0;
+    padding: 0;
+    float: left;
+}
+.tags{
+    margin:7px ;
+    padding: 0;
+    float: left;
+}
+p {
+    float: left;
+    font-style: italic;
+}
+.tags li :after{content:"," }
+.author:before{
+    content:"Published by: " }
+.date:before{
+    content:"on " }
+
+.tags a{text-decoration: none}
+.author{
+    font-weight: bold;
+    color: firebrick;
+    text-decoration: underline;
+    font-family: "Copperplate Gothic Bold", monospace;
+}
+.date{
+    font-family: Garamond, monospace;
+}
+aside {
+
+    width: 30%;
+    height: 30em;
+    float: right;
+    font-style: italic;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    color: darkred;
+}
+aside p {
+    margin: .5rem;
+}
+.special_article{
+    width: unset !important;
+    float: unset!important;
+    padding:0!important;
+}
+.special_article .author{
+    display: block !important;
+    position: relative !important;
+    float: unset !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+.special_article p{float: unset!important;}
+.special_article img{
+    float: unset!important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 !important;
+    text-align: justify !important;
+}
+.footer {
+    margin: 3em 0 0 0;
+    padding: 0;
+    background-color: gray;
+    width: 100%;
+}
+.footer p{
+    float: unset!important;
+    text-align: center;
+}
+.czu{
+    width: 20% !important;
+    height: 20% !important;
+    filter: invert(100%);
+}
+.footer img{
+    display: block;
+    width: 100px;
+    height:100px;
+    padding-top: 2em;
+    margin: 0 auto 0 auto;
+
+}
+
+.scrollable{
+    width: 100%;
+    overflow: scroll;
+}
+@media screen and (min-width:768px) {
+    .scrollable {
+        overflow: hidden;
+    }
+}
