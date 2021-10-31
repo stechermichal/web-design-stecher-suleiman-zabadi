@@ -58,7 +58,7 @@
     <main class="main">
         <section>
             <h2>RECENT ARTICLES</h2>
-            <article itemscope itemtype="https://schema.org/Article">
+            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">Sparta wins in the last minute!</h3>
                 <img itemprop="image" src="https://img.blesk.cz/img/2/article/6938908_v0i.jpg?v=0i" alt="sparta" style="width:100%"/>
                 <div class="author"  itemprop="author">Jakub Cerny</div>
@@ -70,9 +70,9 @@
                     <li><a href="" >Sparta</a></li>
                 </ul>
             </article>
-            <article itemscope itemtype="https://schema.org/Article">
+            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">NASA Picks SpaceX to Land Next Americans on Moon</h3>
-                <img itemprop="image" src="http://www.nasa.gov/sites/default/files/thumbnails/image/jsc2020e000649.jpg" alt="nasa" style="width:100%">
+                <img itemprop="image" src="https://www.nasa.gov/sites/default/files/thumbnails/image/jsc2020e000649.jpg" alt="nasa" style="width:100%">
                 <div class="author"  itemprop="author">Kristina Brozkova</div>
                 <p itemprop="abstract"> NASA is getting ready to send astronauts to explore more of the Moon as part of the Artemis program, and the agency has selected SpaceX to continue development of the first commercial human lander that will safely carry the next two American astronauts to the lunar surface.</p>
                 <div class="date" itemprop="datePublished">2021-04-01</div>
@@ -82,9 +82,9 @@
                     <li><a href="" >SpaceX</a></li>
                 </ul>
             </article>
-            <article itemscope itemtype="https://schema.org/Article">
+            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">Zara's Summer Collection Just Dropped—and It's Very, Very Good</h3>
-                <img itemprop="image" src="http://i3.mirror.co.uk/incoming/article5647391.ece/ALTERNATES/s615b/suede.jpg" alt="zara" style="width:100%">
+                <img itemprop="image" src="https://i3.mirror.co.uk/incoming/article5647391.ece/ALTERNATES/s615b/suede.jpg" alt="zara" style="width:100%">
                 <div class="author"  itemprop="author">Jiri Bartus</div>
                 <p itemprop="abstract"> The beach is by now a distant memory, however thanks to Zara's new summer drop we have a (virtual) dose of holidays.</p>
                 <div class="date" itemprop="datePublished">2021-04-02</div>
@@ -97,7 +97,7 @@
         </section>
         <section>
             <h2>most viewed</h2>
-            <article itemscope itemtype="https://schema.org/Article">
+            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">The iPad is perfect for art, games and movies, but Apple wants more</h3>
                 <img itemprop="image" src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1-npbhfzogfj.jpg" alt="Ipad" style="width:100%">
                 <div class="author"  itemprop="author">David Brandon </div>
@@ -108,7 +108,7 @@
                     <li><a href="" >Apple</a></li>
                 </ul>
             </article>
-            <article itemscope itemtype="https://schema.org/Article" >
+            <article class="normal_article" itemscope itemtype="https://schema.org/Article" >
                 <h3 itemprop="headline">Stars Who Died In 2021: Helen McCrory,DMX, Prince Philip, & More</h3>
                 <img itemprop="image" src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Faf5b802c-9f9d-11eb-9528-e3733dc789af.jpg?crop=2667%2C1500%2C0%2C0&resize=1180" alt="celebrities" style="width:100%">
                 <div class="author"  itemprop="author">Jim Cary</div>
@@ -120,27 +120,34 @@
             </article>
         </section>
         <section >
-            <h2>Our selection for the day</h2>
-            <aside>
-                <p></o><img itemprop="image" src="https://i.imgur.com/HU3w0jw.png" alt="who" style="width:100%"></p>
-                <h4 itemprop="headline"><a href="">Top 10 tips issued by Wolrd Health Organization.</a></h4>
-                <p></o><img itemprop="image" src="https://i.imgur.com/Nwj3JcY.png" alt="hands" style="width:100%"></p>
-                <h4 itemprop="headline"><a href="">Is hot water important while washing hands?</a></h4>
-            </aside>
-            <article class="special_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">Coronavirus: Europe surpasses 1 million COVID deaths, WHO says</h3>
-                <img itemprop="image" src="https://i.imgur.com/xGDq5CJ.jpg" alt="covid" style="width:100%">
-                <div class="author"  itemprop="author">Jim Cary</div>
-                <div itemprop="articleBody">
-                    <p>More than 1 million people have died from COVID-19 in Europe, the World Health Organization announced on Thursday.</p>
-                    <p>WHO Europe Director Hans Kluge warned that the situation remains "serious," with about 1.6 million new cases reported each week in the region.</p>
-                    <p>Speaking on vaccine fears, Kluge said the risk of people suffering blood clots is far higher for people with COVID-19 than people who receive AstraZeneca's coronavirus vaccine.</p>
-                </div>
-                <div class="date" itemprop="datePublished">2021-04-03</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="" >covid</a></li>
-                </ul>
-            </article>
+            <h2>Our Selection For The Week</h2>
+            <div class="special_section">
+                <article class="special_article" itemscope itemtype="https://schema.org/Article">
+                    <h3 itemprop="headline">Coronavirus: Europe surpasses 1 million COVID deaths, WHO says</h3>
+                    <img itemprop="image" src="https://i.imgur.com/xGDq5CJ.jpg" alt="covid" style="width:100%">
+                    <div class="author"  itemprop="author">Jim Cary</div>
+                    <div itemprop="articleBody">
+                        <p>More than 1 million people have died from COVID-19 in Europe, the World Health Organization announced on Thursday.</p>
+                        <p>WHO Europe Director Hans Kluge warned that the situation remains "serious," with about 1.6 million new cases reported each week in the region.</p>
+                        <p>Speaking on vaccine fears, Kluge said the risk of people suffering blood clots is far higher for people with COVID-19 than people who receive AstraZeneca's coronavirus vaccine.</p>
+                    </div>
+                    <div class="date" itemprop="datePublished">2021-04-03</div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="" >covid</a></li>
+                    </ul>
+                </article>
+                <aside>
+                    <h3 itemprop="headline"> Our Selection From Previous Weeks</h3>
+                    <article>
+                        <img class="special_section_img" itemprop="image" src="https://i.imgur.com/HU3w0jw.png" alt="who" style="width:90%">
+                        <h4 class="aside_article" itemprop="headline"><a href="">Top 10 tips issued by Wolrd Health Organization.</a></h4>
+                    </article>
+                    <article>
+                        <img class="special_section_img" itemprop="image" src="https://i.imgur.com/Nwj3JcY.png" alt="hands" style="width:90%">
+                        <h4 class="aside_article" itemprop="headline"><a href="">Is hot water important while washing hands?</a></h4>
+                    </article>
+                </aside>
+            </div>
         </section>
         <section>
             <h2>UEFA Europa League this week</h2>

@@ -79,7 +79,7 @@ body{width:100%}
     position: absolute;
     background-color: lightskyblue;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -109,7 +109,6 @@ h1{
 
 .league {
     border-collapse: collapse;
-    width: 100%;
     margin:15px 0 0 0;
     padding: 0;
     width: max-content;
@@ -141,24 +140,24 @@ h2{
     background-image: linear-gradient(to right, blue, white,blue);
 }
 
-article{
+.normal_article{
     float: left;
     width: 100%;
     display: grid;
 }
 @media screen and (min-width:468px) {
-    article {
+    .normal_article {
         width: 48%;
         padding-left: 2%;
     }
 }
 @media screen and (min-width:1024px) {
-    article {
+    .normal_article {
         width: 30%;
         padding-left: 3%;
     }
 }
-article img {
+.normal_article img {
     float: left;
 }
 section:after {
@@ -202,27 +201,58 @@ p {
 .date{
     font-family: Garamond, monospace;
 }
+
+
+.special_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 aside {
-    width: 30%;
-    height: 30em;
-    float: right;
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
     font-style: normal;
-    box-shadow: inset 5px 0 5px -5px #29627e;
+    box-shadow: 10px 5px 5px #7e7d7d;
     color: darkred;
+}
+@media screen and (min-width:768px) {
+    aside {
+        width: 30%;
+    }
+}
+
+aside article {
+    width: 90%;
+    margin: 0 auto;
+}
+aside h3{
+    margin: 30px auto 0;
 }
 aside p {
     margin: .5rem;
 }
-h4{
+.special_section_img{
+    margin: 0 auto;
+    width: 80%;
+}
+.aside_article{
 
     width: 100%;
     font-size: 20px;
     text-align: center;
 }
 .special_article{
-    width: unset !important;
-    float: unset!important;
-    padding:0!important;
+    width: unset;
+    float: unset;
+    padding:0
+}
+@media screen and (min-width:768px) {
+    .special_article {
+        width: 68%;
+    }
 }
 .special_article .author{
     display: block !important;
@@ -235,7 +265,6 @@ h4{
 .special_article p{float: unset!important;}
 .special_article img{
     float: unset!important;
-    width: auto !important;
     display: block !important;
     margin: 0 !important;
     text-align: justify !important;
