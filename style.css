@@ -203,16 +203,21 @@ p {
     font-family: Garamond, monospace;
 }
 aside {
-
     width: 30%;
     height: 30em;
     float: right;
-    font-style: italic;
+    font-style: normal;
     box-shadow: inset 5px 0 5px -5px #29627e;
     color: darkred;
 }
 aside p {
     margin: .5rem;
+}
+h4{
+
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
 }
 .special_article{
     width: unset !important;
