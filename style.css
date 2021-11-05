@@ -104,7 +104,9 @@ h1{
     font-size: xxx-large;
     height: 15rem;
     background-image: url("https://www.i-com.it/wp-content/uploads/2017/11/mediterranean_gateway.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .league {
