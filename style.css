@@ -48,7 +48,8 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: lightskyblue;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 /*for screens*/
 @media screen and (min-width:768px) {
@@ -56,12 +57,13 @@ body{
         display: block;
     }
 }
-.list li {
+.main-list {
     float: left;
 }
 
 .list li a, .dropbtn {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -74,11 +76,12 @@ body{
     background-color: blue;
 }
 
-.list li.dropdown {
+.dropdown {
     display: inline-block;
 }
 
 .dropdown-content {
+
     display: none;
     position: absolute;
     background-color: lightskyblue;
