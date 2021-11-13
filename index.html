@@ -16,16 +16,15 @@
 <body>
 <div class="Homepage">
     <header>
-        <div><p>hazem testing github</p></div>
         <h1> Europe Today</h1>
-        <nav>
+        <nav style="width: 100%">
             <ul class="list">
                 <li class="logo">
                     <img src="https://i.imgur.com/MKZ1xOv.png" alt="Logo">
                     <div>Europe Today</div>
                 </li>
-                <li class="main-list"><a href="#">Home</a></li>
-                <li class="dropdown, main-list">
+                <li class="main-list"><a class="list__item" href="#">Home</a></li>
+                <li class="main-list dropdown">
                     <a class="dropbtn">Sections</a>
                     <ul class="dropdown-content">
                         <li><a href="">Sport</a></li>
@@ -37,7 +36,7 @@
                         <li><a href="">Science</a></li>
                     </ul>
                 </li>
-                <li class="dropdown, main-list">
+                <li class="main-list dropdown">
                     <a class="dropbtn">countries</a>
                     <ul class="dropdown-content">
                         <li><a href="">Czech Republic</a></li>
@@ -49,8 +48,8 @@
                         <li><a href="">Italy</a></li>
                     </ul>
                 </li>
-                <li class="main-list"><a href="">Contact Us</a></li>
-                <li class="main-list"><a href="">FAQ</a></li>
+                <li class="main-list"><a class="list__item" href="">Contact Us</a></li>
+                <li class="main-list"><a class="list__item" href="">FAQ</a></li>
                 <li class="main-list">
                     <label>
                         <input class="search" type="text" placeholder="Search..">
@@ -62,6 +61,7 @@
     <main class="main">
         <section>
             <h2>RECENT ARTICLES</h2>
+            <div class="section__articles">
             <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">Sparta wins in the last minute!</h3>
                 <img itemprop="image" src="https://i.imgur.com/VTZc6uX.jpg" alt="sparta" style="width:100%"/>
@@ -84,11 +84,13 @@
                     commercial human lander that will safely carry the next two American astronauts to the lunar
                     surface.</p>
                 <div class="date" itemprop="datePublished">2021-04-01</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="">Science</a></li>
-                    <li><a href="">NASA</a></li>
-                    <li><a href="">SpaceX</a></li>
-                </ul>
+                <div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="">Science</a></li>
+                        <li><a href="">NASA</a></li>
+                        <li><a href="">SpaceX</a></li>
+                    </ul>
+                </div>
             </article>
             <article class="normal_article" itemscope itemtype="https://schema.org/Article">
                 <h3 itemprop="headline">Zara's Summer Collection Just Dropped—and It's Very, Very Good</h3>
@@ -104,35 +106,38 @@
                     <li><a href="">Summer</a></li>
                 </ul>
             </article>
+            </div>
         </section>
         <section>
             <h2>most viewed</h2>
-            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">The iPad is perfect for art, games and movies, but Apple wants more</h3>
-                <img itemprop="image"
-                     src="https://i.imgur.com/92IpU2u.jpg" alt="Ipad" style="width:100%">
-                <div class="author" itemprop="author">David Brandon</div>
-                <p itemprop="abstract">The pandemic has reminded people how important it is to have a keyboard, mouse or
-                    trackpad to get work done. The iPad's still working on that.</p>
-                <div class="date" itemprop="datePublished">2021-04-07</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="">Science</a></li>
-                    <li><a href="">Apple</a></li>
-                </ul>
-            </article>
-            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">Stars Who Died In 2021: Helen McCrory,DMX, Prince Philip, & More</h3>
-                <img itemprop="image"
-                     src="https://i.imgur.com/RpzDSBt.jpg" alt="celebrities" style="width:100%">
-                <div class="author" itemprop="author">Jim Cary</div>
-                <p itemprop="abstract">Helen McCrory, the beloved British actress, passed away at the age of 52 after
-                    her private battle with cancer. This year, we’ve also lost DMX, Prince Philip, Beverly Cleary, and
-                    more stars.</p>
-                <div class="date" itemprop="datePublished">2021-04-03</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="">Celebrities</a></li>
-                </ul>
-            </article>
+            <div class="section__articles">
+                <article class="normal_article" itemscope itemtype="https://schema.org/Article">
+                    <h3 itemprop="headline">The iPad is perfect for art, games and movies, but Apple wants more</h3>
+                    <img itemprop="image"
+                         src="https://i.imgur.com/92IpU2u.jpg" alt="Ipad" style="width:100%">
+                    <div class="author" itemprop="author">David Brandon</div>
+                    <p itemprop="abstract">The pandemic has reminded people how important it is to have a keyboard, mouse or
+                        trackpad to get work done. The iPad's still working on that.</p>
+                    <div class="date" itemprop="datePublished">2021-04-07</div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="">Science</a></li>
+                        <li><a href="">Apple</a></li>
+                    </ul>
+                </article>
+                <article class="normal_article" itemscope itemtype="https://schema.org/Article">
+                    <h3 itemprop="headline">Stars Who Died In 2021: Helen McCrory,DMX, Prince Philip, & More</h3>
+                    <img itemprop="image"
+                         src="https://i.imgur.com/RpzDSBt.jpg" alt="celebrities" style="width:100%">
+                    <div class="author" itemprop="author">Jim Cary</div>
+                    <p itemprop="abstract">Helen McCrory, the beloved British actress, passed away at the age of 52 after
+                        her private battle with cancer. This year, we’ve also lost DMX, Prince Philip, Beverly Cleary, and
+                        more stars.</p>
+                    <div class="date" itemprop="datePublished">2021-04-03</div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="">Celebrities</a></li>
+                    </ul>
+                </article>
+            </div>
         </section>
         <section>
             <h2>Our Selection For The Week</h2>

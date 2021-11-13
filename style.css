@@ -21,27 +21,18 @@ body{
     position: relative;
     height: 19px;
 }
-
+@media screen and (max-width: 790px) and (min-width:768px ){
+    .logo div{
+        display: none;
+    }
+}
 .search{
     background: white;
     display: block;
-    float: right;
     padding: 1rem;
     position: relative;
     width: 100%;
 }
-/*for tablets*/
-@media screen and (min-width:768px) {
-    .search {
-        width: 19%;
-    }
-}
-@media screen and (min-width:1024px) {
-    .search {
-        width: 35%;
-    }
-}
-
 .list {
     list-style-type: none;
     margin: 0;
@@ -50,18 +41,19 @@ body{
     background-color: lightskyblue;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 /*for screens*/
 @media screen and (min-width:768px) {
     .list {
-        display: block;
+        flex-direction: row;
     }
 }
 .main-list {
     float: left;
+    flex-grow: 1;
 }
-
-.list li a, .dropbtn {
+.list__item, .dropbtn {
     display: flex;
     flex-direction: column;
     color: white;
@@ -71,37 +63,48 @@ body{
     height: 23px;
     align-items: center;
 }
-
-.list li a:hover, .dropdown:hover .dropbtn {
+.list__item:hover, .dropdown:hover .dropbtn {
     background-color: blue;
 }
 
 .dropdown {
     display: inline-block;
 }
-
 .dropdown-content {
-
     display: none;
     position: absolute;
     background-color: lightskyblue;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding-left: 0;
     z-index: 1;
 }
-
+.dropdown-content li{
+    list-style-type: none;
+    width: 100%;
+}
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
+.dropdown-content a:hover {
+    background-color: blue;
+}
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+}
+@media screen and (min-width: 768px){
+    .dropdown:hover .dropdown-content{
+        width: 15%;
+        left: auto;
+    }
 }
 h1{
     color: yellow;
@@ -115,32 +118,6 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.league {
-    border-collapse: collapse;
-    margin:15px 0 0 0;
-    padding: 0;
-    width: max-content;
-}
-@media screen and (min-width:768px) {
-    .league {
-        width: 100%;
-    }
-}
-
-th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-}
-th {
-    color: white;
-    background-color: gray ;
-    text-align: left;
-}
-.league tr:nth-child(odd){
-    background-color: lightgray;
-}
 h2{
     margin: 3em 0 0 0;
     width: 100%;
@@ -148,12 +125,17 @@ h2{
     text-align: center;
     background-image: linear-gradient(to right, blue, white,blue);
 }
-
 .normal_article{
     float: left;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.section__articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 @media screen and (min-width:468px) {
     .normal_article {
@@ -164,7 +146,7 @@ h2{
 @media screen and (min-width:1024px) {
     .normal_article {
         width: 30%;
-        padding-left: 3%;
+        max-width: 400px;
     }
 }
 .normal_article img {
@@ -211,8 +193,6 @@ p {
 .date{
     font-family: Garamond, monospace;
 }
-
-
 .special_section{
     display: flex;
     flex-direction: row;
@@ -220,7 +200,9 @@ p {
     flex-wrap: wrap;
 }
 aside {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 0 auto;
     width: 90%;
     height: auto;
@@ -233,7 +215,6 @@ aside {
         width: 30%;
     }
 }
-
 aside article {
     width: 90%;
     margin: 0 auto;
@@ -270,7 +251,6 @@ aside p {
     float: unset !important;
     margin: 0 !important;
     padding: 0 !important;
-
 }
 .special_article p{float: unset!important;}
 .special_article img{
@@ -278,6 +258,30 @@ aside p {
     display: block !important;
     margin: 0 !important;
     text-align: justify !important;
+}
+.league {
+    border-collapse: collapse;
+    margin:15px 0 0 0;
+    padding: 0;
+    width: max-content;
+}
+@media screen and (min-width:768px) {
+    .league {
+        width: 100%;
+    }
+}
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+th {
+    color: white;
+    background-color: gray ;
+    text-align: left;
+}
+.league tr:nth-child(odd){
+    background-color: lightgray;
 }
 .footer {
     margin: 3em 0 0 0;
@@ -300,9 +304,7 @@ aside p {
     height:100px;
     padding-top: 2em;
     margin: 0 auto 0 auto;
-
 }
-
 .scrollable{
     width: 100%;
     overflow: scroll;
