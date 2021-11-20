@@ -1,120 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Europe Today</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="This is Europe Today Online magazine">
     <meta name="Done by" content="Zabadi Mohammad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="https://www.eutoday.com/cz"/>
     <meta property="og:image" content="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png"/>
-    <link rel="icon" href="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png"
-          type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="Homepage">
-    <header>
-        <h1> Europe Today</h1>
-        <nav style="width: 100%">
-            <ul class="list">
-                <li class="logo">
-                    <img src="https://i.imgur.com/MKZ1xOv.png" alt="Logo">
-                    <div>Europe Today</div>
+<header class="header">
+    <a href="" class="logo">
+        <img class="logo-img" src="https://i.imgur.com/MKZ1xOv.png" alt="logo">
+        <div class="logo-div">Europe Today</div>
+    </a>
+    <div>
+        <button class="menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <span class="navicon"></span>
+        </button>
+    </div>
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <img class="logo-img" src="https://i.imgur.com/MKZ1xOv.png" alt="logo">
+            <div class="logo-div">Europe Today</div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu  navbar-collapse" >
+                <li>
+                    <input type="text" class="form-control form-input" placeholder="Search ...">
                 </li>
-                <li class="main-list"><a class="list__item" href="#">Home</a></li>
-                <li class="main-list dropdown">
-                    <a class="dropbtn">Sections</a>
+                <li><a href="#index">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">categories</a>
                     <ul class="dropdown-content">
                         <li><a href="">Sport</a></li>
-                        <li><a href="">Culture</a></li>
                         <li><a href="">Weather</a></li>
-                        <li><a href="">Celebrities</a></li>
-                        <li><a href="">Art</a></li>
                         <li><a href="">Fashion</a></li>
                         <li><a href="">Science</a></li>
                     </ul>
                 </li>
-                <li class="main-list dropdown">
-                    <a class="dropbtn">countries</a>
-                    <ul class="dropdown-content">
-                        <li><a href="">Czech Republic</a></li>
-                        <li><a href="">United Kingdom</a></li>
-                        <li><a href="">Slovakia</a></li>
-                        <li><a href="">Germany</a></li>
-                        <li><a href="">France</a></li>
-                        <li><a href="">Spain</a></li>
-                        <li><a href="">Italy</a></li>
-                    </ul>
-                </li>
-                <li class="main-list"><a class="list__item" href="">Contact Us</a></li>
-                <li class="main-list"><a class="list__item" href="">FAQ</a></li>
-                <li class="main-list">
-                    <label>
-                        <input class="search" type="text" placeholder="Search..">
-                    </label>
-                </li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</header>
+<div class="h1-background">
+    <div class="transbox">
+        <h1>Europe Today</h1>
+    </div>
+</div>
+<section class="main-section">
     <main class="main">
-        <section>
-            <h2>RECENT ARTICLES</h2>
-            <div class="section__articles">
-            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">Sparta wins in the last minute!</h3>
-                <img itemprop="image" src="https://i.imgur.com/VTZc6uX.jpg" alt="sparta" style="width:100%"/>
-                <div class="author" itemprop="author">Jakub Cerny</div>
-                <p itemprop="abstract">Sparta gave a great play on monday, until the last minute the score was 2:2, but
-                    they score the golden goal in the last minute. More of the story in the article.</p>
-                <div class="date" itemprop="datePublished">2021-03-28</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="">Sport</a></li>
-                    <li><a href="">Football</a></li>
-                    <li><a href="">Sparta</a></li>
-                </ul>
-            </article>
-            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">NASA Picks SpaceX to Land Next Americans on Moon</h3>
-                <img itemprop="image" src="https://i.imgur.com/qcxYZjt.jpg" alt="nasa" style="width:100%">
-                <div class="author" itemprop="author">Kristina Brozkova</div>
-                <p itemprop="abstract"> NASA is getting ready to send astronauts to explore more of the Moon as part of
-                    the Artemis program, and the agency has selected SpaceX to continue development of the first
-                    commercial human lander that will safely carry the next two American astronauts to the lunar
-                    surface.</p>
-                <div class="date" itemprop="datePublished">2021-04-01</div>
+        <div class="category-header ">
+            <h2>Recent Articles </h2>
+        </div>
+        <div class="articles articles__categories ">
+            <article itemscope itemtype="https://schema.org/Article" class="article-card">
                 <div>
+                    <img src="https://i.imgur.com/VTZc6uX.jpg" alt="sparta" class="article-img">
+                    <h3 class="article-title" itemprop="headline">Sparta wins in the last minute!</h3>
+                </div>
+                <div class="article-desc">
+                    <div class="author" itemprop="author">Jakub Cerny</div>
+                    <p itemprop="abstract">Sparta gave a great play on monday, until the last minute the score was 2:2, but
+                        they score the golden goal in the last minute. More of the story in the article.</p>
+                    <div class="date" itemprop="datePublished">2021-03-28</div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Football</a></li>
+                        <li><a href="">Sparta</a></li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/Article" class="article-card">
+                <div>
+                    <img src="https://i.imgur.com/qcxYZjt.jpg" alt="nasa" class="article-img">
+                    <h3 class="article-title" itemprop="headline">NASA Picks SpaceX to Land Next Americans on Moon</h3>
+                </div>
+                <div class="article-desc">
+                    <div class="author" itemprop="author">Kristina Brozkova</div>
+                    <p itemprop="abstract">NASA is getting ready to send astronauts to explore more of the Moon as part of
+                        the Artemis program, and the agency has selected SpaceX to continue development of the first
+                        commercial human lander that will safely carry the next two American astronauts to the lunar
+                        surface.</p>
+                    <div class="date" itemprop="datePublished">2021-04-01</div>
                     <ul class="tags" itemprop="keywords">
                         <li><a href="">Science</a></li>
                         <li><a href="">NASA</a></li>
                         <li><a href="">SpaceX</a></li>
                     </ul>
+                    <a href="#">Read More</a>
                 </div>
             </article>
-            <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="headline">Zara's Summer Collection Just Dropped—and It's Very, Very Good</h3>
-                <img itemprop="image"
-                     src="https://i.imgur.com/ItMrXzb.png" alt="zara" style="width:100%">
-                <div class="author" itemprop="author">Jiri Bartus</div>
-                <p itemprop="abstract"> The beach is by now a distant memory, however thanks to Zara's new summer drop
-                    we have a (virtual) dose of holidays.</p>
-                <div class="date" itemprop="datePublished">2021-04-02</div>
-                <ul class="tags" itemprop="keywords">
-                    <li><a href="">Fashion</a></li>
-                    <li><a href="">Zara</a></li>
-                    <li><a href="">Summer</a></li>
-                </ul>
+            <article itemscope itemtype="https://schema.org/Article" class="article-card">
+                <div>
+                    <img src="https://i.imgur.com/ItMrXzb.png" alt="zara" class="article-img">
+                    <h3 class="article-title" itemprop="headline">Zara's Summer Collection Just Dropped—and It's Very, Very Good</h3>
+                </div>
+                <div class="article-desc">
+                    <div class="author" itemprop="author">Jiri Bartus</div>
+                    <p itemprop="abstract">The beach is by now a distant memory, however thanks to Zara's new summer drop
+                        we have a (virtual) dose of holidays.</p>
+                    <div class="date" itemprop="datePublished">2021-04-02</div>
+                    <ul class="tags" itemprop="keywords">
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Zara</a></li>
+                        <li><a href="">Summer</a></li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
             </article>
-            </div>
-        </section>
-        <section>
-            <h2>most viewed</h2>
-            <div class="section__articles">
-                <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                    <h3 itemprop="headline">The iPad is perfect for art, games and movies, but Apple wants more</h3>
-                    <img itemprop="image"
-                         src="https://i.imgur.com/92IpU2u.jpg" alt="Ipad" style="width:100%">
+        </div>
+        <div class="category-header ">
+            <h2>Most Viewed</h2>
+        </div>
+        <div class="articles articles__categories ">
+            <article itemscope itemtype="https://schema.org/Article" class="article-card">
+                <div>
+                    <img src="https://i.imgur.com/92IpU2u.jpg" alt="apple" class="article-img">
+                    <h3 class="article-title" itemprop="headline">The iPad is perfect for art, games and movies, but Apple wants more</h3>
+                </div>
+                <div class="article-desc">
                     <div class="author" itemprop="author">David Brandon</div>
                     <p itemprop="abstract">The pandemic has reminded people how important it is to have a keyboard, mouse or
                         trackpad to get work done. The iPad's still working on that.</p>
@@ -123,11 +139,15 @@
                         <li><a href="">Science</a></li>
                         <li><a href="">Apple</a></li>
                     </ul>
-                </article>
-                <article class="normal_article" itemscope itemtype="https://schema.org/Article">
-                    <h3 itemprop="headline">Stars Who Died In 2021: Helen McCrory,DMX, Prince Philip, & More</h3>
-                    <img itemprop="image"
-                         src="https://i.imgur.com/RpzDSBt.jpg" alt="celebrities" style="width:100%">
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/Article" class="article-card">
+                <div>
+                    <img src="https://i.imgur.com/RpzDSBt.jpg" alt="celebrities" class="article-img">
+                    <h3 class="article-title" itemprop="headline">Stars Who Died In 2021: Helen McCrory,DMX, Prince Philip, & More</h3>
+                </div>
+                <div class="article-desc">
                     <div class="author" itemprop="author">Jim Cary</div>
                     <p itemprop="abstract">Helen McCrory, the beloved British actress, passed away at the age of 52 after
                         her private battle with cancer. This year, we’ve also lost DMX, Prince Philip, Beverly Cleary, and
@@ -136,19 +156,23 @@
                     <ul class="tags" itemprop="keywords">
                         <li><a href="">Celebrities</a></li>
                     </ul>
-                </article>
-            </div>
-        </section>
-        <section>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+        </div>
+        <div class="category-header ">
             <h2>Our Selection For The Week</h2>
-            <div class="special_section">
-                <article class="special_article" itemscope itemtype="https://schema.org/Article">
-                    <h3 itemprop="headline">Coronavirus: Europe surpasses 1 million COVID deaths, WHO says</h3>
-                    <img itemprop="image" src="https://i.imgur.com/EXd0K5L.jpeg" alt="covid" style="width:100%">
+        </div>
+        <div class="articles articles__categories ">
+            <article itemscope itemtype="https://schema.org/Article" class="article-card article-card__special">
+                <div>
+                    <img src="https://i.imgur.com/EXd0K5L.jpeg" alt="coronavirus" class="article-img">
+                    <h3 class="article-title" itemprop="headline">Coronavirus: Europe surpasses 1 million COVID deaths, WHO says</h3>
+                </div>
+                <div class="article-desc">
                     <div class="author" itemprop="author">Jim Cary</div>
-                    <div itemprop="articleBody">
-                        <p>More than 1 million people have died from COVID-19 in Europe, the World Health Organization
-                            announced on Thursday.</p>
+                    <div itemprop="abstract"><p>More than 1 million people have died from COVID-19 in Europe, the World Health Organization
+                        announced on Thursday.</p>
                         <p>WHO Europe Director Hans Kluge warned that the situation remains "serious," with about 1.6
                             million new cases reported each week in the region.</p>
                         <p>Speaking on vaccine fears, Kluge said the risk of people suffering blood clots is far higher
@@ -158,26 +182,39 @@
                     <ul class="tags" itemprop="keywords">
                         <li><a href="">covid</a></li>
                     </ul>
-                </article>
-                <aside>
-                    <h3 itemprop="headline"> Our Selection From Previous Weeks</h3>
-                    <article>
-                        <img class="special_section_img" itemprop="image" src="https://i.imgur.com/HU3w0jw.png"
-                             alt="who" style="width:90%">
-                        <h4 class="aside_article" itemprop="headline"><a href="">Top 10 tips issued by Wolrd Health
-                            Organization.</a></h4>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+            <aside class="aside-special__width">
+                <div class="aside-card">
+                    <h2>Our Selection From Previous Weeks</h2>
+                    <article itemscope itemtype="https://schema.org/Article" class="article-card article-card">
+                        <div>
+                            <img src="https://i.imgur.com/HU3w0jw.png" alt="WHO" class="article-img">
+                            <h3 class="aside-card-title__special" itemprop="headline">Top 10 tips issued by Wolrd Health
+                                Organization.</h3>
+                        </div>
+                        <div class="article-desc">
+                            <a href="#">Read More</a>
+                        </div>
                     </article>
-                    <article>
-                        <img class="special_section_img" itemprop="image" src="https://i.imgur.com/Nwj3JcY.png"
-                             alt="hands" style="width:90%">
-                        <h4 class="aside_article" itemprop="headline"><a href="">Is hot water important while washing
-                            hands?</a></h4>
+                    <article itemscope itemtype="https://schema.org/Article" class="article-card article-card">
+                        <div>
+                            <img src="https://i.imgur.com/Nwj3JcY.png" alt="WHO" class="article-img">
+                            <h3 class="aside-card-title__special" itemprop="headline">Is hot water important while washing
+                                hands?</h3>
+                        </div>
+                        <div class="article-desc">
+                            <a href="#">Read More</a>
+                        </div>
                     </article>
-                </aside>
-            </div>
-        </section>
+                </div>
+            </aside>
+        </div>
         <section>
-            <h2>UEFA Europa League this week</h2>
+            <div class="category-header ">
+                <h2>Our Selection For The Week</h2>
+            </div>
             <div class="scrollable">
                 <table class="league">
                     <tr>
@@ -219,13 +256,29 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+</section>
+
+<section class="cta">
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur, facere illum itaque
+            laudantium nisi quis vero! Dolores eveniet illo impedit magni, necessitatibus nesciunt nobis provident quo
+            reprehenderit soluta vero!</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
         <img class="czu" src="https://www.czu.cz/cache/article-data/CZU_logo_bila%20-%20kopie.png" alt="CZU logo">
-        <img src="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png" alt="logo">
+        <img class="footer-logo" src="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png" alt="logo">
         <p> EUROPE TODAY</p>
         <p>Web Design</p>
         <p> By: Zabadi Mohammad & Štecher Michal & Suleiman Hazem</p>
-    </footer>
-</div>
+        <p>Copyright &copy; 2021</p>
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>

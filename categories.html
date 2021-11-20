@@ -5,338 +5,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is Europe Today Online magazine">
+    <meta name="Done by" content="Zabadi Mohammad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://www.eutoday.com/cz"/>
+    <meta property="og:image" content="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
-
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
     <a href="" class="logo">
-        <img src="https://via.placeholder.com/200x60" alt="">
+        <img class="logo-img" src="https://i.imgur.com/MKZ1xOv.png" alt="logo">
+        <div class="logo-div">Europe Today</div>
     </a>
     <div>
-        <input class="menu-btn" type="checkbox" id="menu-btn"/>
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#work">Our Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <button class="menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <span class="navicon"></span>
+        </button>
+    </div>
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <img class="logo-img" src="https://i.imgur.com/MKZ1xOv.png" alt="logo">
+            <div class="logo-div">Europe Today</div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu  navbar-collapse" >
+                <li>
+                    <input type="text" class="form-control form-input" placeholder="Search ...">
+                </li>
+                <li><a href="#index">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">categories</a>
+                    <ul class="dropdown-content">
+                        <li><a href="">Sport</a></li>
+                        <li><a href="">Weather</a></li>
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Science</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
     </div>
 </header>
-
+<div class="h1-background">
+    <div class="transbox">
+        <h1>Europe Today</h1>
+    </div>
+</div>
 <section class="main-section">
     <main class="layout">
-        <div class="category-1">
-            <div class="category-header ">
-                <h2>Category Name Here.</h2>
-            </div>
-            <div class="articles">
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="category-2">
-            <div class="category-header ">
-                <h2>Category Name Here.</h2>
-            </div>
-            <div class="articles">
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="category-3">
-            <div class="category-header ">
-                <h2>Category Name Here.</h2>
-            </div>
-            <div class="articles">
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <aside>
-                    <div class="aside-card">
-                        <h4>Lorem ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
-                            ipsa iure, minima nostrum possimus qui ullam?</p>
-
-                    </div>
-                </aside>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div>
-                        <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                        <h4 class="article-title">Article Title Here</h4>
-                    </div>
-                    <div class="article-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
-                            autem eveniet inventore repellendus.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="category-header item_1">
+        <div class="category-header category-header-1">
             <h2>Category Name Here.</h2>
         </div>
-        <div class="articles item_2">
-            <div class="article-card">
+        <div class="articles article-1">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -344,10 +75,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -355,10 +86,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -366,11 +97,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -378,10 +108,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -389,10 +119,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -400,10 +130,10 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="article-card">
+            <div class="article-card article-card__categories">
                 <div>
                     <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
-                    <h4 class="article-title">Article Title Here</h4>
+                    <h3 class="article-title">Article Title Here</h3>
                 </div>
                 <div class="article-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
@@ -412,12 +142,278 @@
                 </div>
             </div>
         </div>
-        <aside>
+        <aside class="aside-1">
             <div class="aside-card">
-                <h4>Lorem ipsum dolor.</h4>
+                <h3>Lorem ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
                     ipsa iure, minima nostrum possimus qui ullam?</p>
-
+            </div>
+        </aside>
+        <div class="category-header category-header-2">
+            <h2>Category Name Here.</h2>
+        </div>
+        <div class="articles article-2">
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <aside class="aside-2">
+            <div class="aside-card">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
+                    ipsa iure, minima nostrum possimus qui ullam?</p>
+            </div>
+        </aside>
+        <div class="category-header category-header-3">
+            <h2>Category Name Here.</h2>
+        </div>
+        <div class="articles article-3">
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <aside class="aside-3">
+            <div class="aside-card">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
+                    ipsa iure, minima nostrum possimus qui ullam?</p>
+            </div>
+        </aside>
+        <div class="category-header category-header-4">
+            <h2>Category Name Here.</h2>
+        </div>
+        <div class="articles article-4">
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="article-card article-card__categories">
+                <div>
+                    <img src="https://via.placeholder.com/300x200" alt="" class="article-img">
+                    <h3 class="article-title">Article Title Here</h3>
+                </div>
+                <div class="article-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, facere? Assumenda at aut,
+                        autem eveniet inventore repellendus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <aside class="aside-4">
+            <div class="aside-card">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio dolorem eos error, facere illo
+                    ipsa iure, minima nostrum possimus qui ullam?</p>
             </div>
         </aside>
     </main>
@@ -432,11 +428,18 @@
 </section>
 
 <footer>
-    <p>Copyright &copy; 2021</p>
-    <p>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Contact Us</a>
-    </p>
+    <div class="footer">
+        <img class="czu" src="https://www.czu.cz/cache/article-data/CZU_logo_bila%20-%20kopie.png" alt="CZU logo">
+        <img class="footer-logo" src="https://www.europe-today.eu/wp-content/uploads/2019/01/europetoday-logo-1.png" alt="logo">
+        <p> EUROPE TODAY</p>
+        <p>Web Design</p>
+        <p> By: Zabadi Mohammad & Štecher Michal & Suleiman Hazem</p>
+        <p>Copyright &copy; 2021</p>
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
 </footer>
 </body>
 </html>
