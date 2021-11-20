@@ -572,3 +572,41 @@ th {
         overflow: hidden;
     }
 }
+@media only screen and (min-width: 769px) {
+    .full-article-detail-layout {
+        display: grid;
+        grid-template-columns: repeat(1, 80%);
+    }
+    .full-article-detail {
+        padding-top: 16px;
+        padding-left: 16px;
+    }
+}
+.article-detail-text p{
+    font-style: normal;
+    text-align: justify;
+}
+.article-detail-img-left {
+    max-height: 350px;
+    max-width: 450px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.article-detail-img-right {
+    max-height: 350px;
+    max-width: 450px;
+    float: right;
+    padding-left: 10px;
+}
+.date-full{
+    float: right;
+    text-decoration: underline;
+}
+.author-full {
+    font-weight: bold;
+    color: #005587;
+    text-decoration: underline;
+}
+
+
