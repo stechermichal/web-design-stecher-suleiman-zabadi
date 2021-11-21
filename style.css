@@ -301,10 +301,7 @@ h1{
     padding: 0;
     float: left;
 }
-p {
-    float: left;
-    font-style: italic;
-}
+
 .tags li :after{content:"," }
 .author:before{
     content:"Published by: " }
@@ -708,41 +705,69 @@ th {
     .address-form__address{
         margin: unset;
     }
-    .full-article-detail-layout {
-        display: grid;
-        grid-template-columns: repeat(1, 80%);
-    }
+
     .full-article-detail {
         padding-top: 16px;
         padding-left: 16px;
     }
+    .article-detail-text img{
+        width: 250px !important;
+        margin: 0 30px!important;
+    }
+    .article-img__left{
+        float: left;
+    }
+    .article-img__right{
+        float: right;
+    }
 }
-
-.article-detail-text p{
-    font-style: normal;
-    text-align: justify;
+.article__header-img img{
+    width: 100%;
+    margin: auto;
 }
-.article-detail-img-left {
-    max-height: 350px;
-    max-width: 450px;
-    float: left;
-    padding-right: 10px;
-    padding-top: 5px;
+.article__header-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
-.article-detail-img-right {
-    max-height: 350px;
-    max-width: 450px;
-    float: right;
-    padding-left: 10px;
+.comment-margin{
+    margin-top: 50px;
 }
-.date-full{
-    float: right;
-    text-decoration: underline;
+.comment-margin div{
+    margin-top: 20px;
 }
-.author-full {
-    font-weight: bold;
-    color: #005587;
-    text-decoration: underline;
+.comment-background-color{
+    background-color: #f2f6f7!important;
+}
+.article-detail-text img{
+    width: 100%;
+    margin: 30px auto;
+}
+.article-detail-text{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px 0 rgb(0 0 0 / 8%);
+    padding: 20px 40px 40px;
+    width: 100%
+}
+.img-captcha{
+    font-size: x-small;
+}
+.article__header-author>div{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: small;
+}
+.article-page--header{
+    margin-top: 40px;
+}
+.article-detail-text__paragraph{
+    display: inline;
+}
+.article-img__captcha{
+    display: flex;
+    flex-direction: row;
 }
 
 
