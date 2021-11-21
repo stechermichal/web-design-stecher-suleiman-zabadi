@@ -62,9 +62,7 @@ a {
     text-indent: 33px;
     border-radius: 10px
 }
-label{
-    display: unset!important;
-}
+
 .form {
     position: relative
 }
@@ -83,7 +81,6 @@ label{
 }
 .form-input {
     height: 55px;
-    text-indent: 33px;
     border-radius: 10px
 }
 .form-input:focus {
@@ -443,6 +440,9 @@ th {
     width: 100%;
     margin: 0 auto -65px auto;
 }
+.contact-form label{
+    display: unset!important;
+}
 .editor--contact__select{
     display: flex;
     flex-direction: column;
@@ -527,7 +527,16 @@ th {
     object-fit: cover;
     float: right;
 }
-
+.label-search{
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.search-button{
+    position: absolute;
+    height: 55px;
+}
 @media only screen and (min-width: 769px) {
     .layout{
         display: grid;
@@ -751,6 +760,9 @@ th {
     padding: 20px 40px 40px;
     width: 100%
 }
+.article-detail-text label{
+    display: unset!important;
+}
 .img-captcha{
     font-size: x-small;
 }
@@ -769,5 +781,3 @@ th {
     display: flex;
     flex-direction: row;
 }
-
-
