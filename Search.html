@@ -58,16 +58,20 @@
         <h1>Europe Today</h1>
     </div>
 </div>
+<main class="main">
 <section class="main-section">
-    <main class="main">
         <div class="search-header">
             <h2 class="search-header__title">Czechia</h2>
             <div class="search-header__results">
                 <p>showing <strong>4</strong> results of <strong>Czechia</strong></p>
-                <label class="label-search">
-                    <input type="search" class="form-input" placeholder="Search ..." >
-                    <button class="form-button search-button" type="submit" onclick="location.href='Search.html'"><i ></i> search</button>
-                </label>
+                <div class="label-search">
+                    <label class="label--search__inputbox">
+                        <input type="search" class="form-input" placeholder="Search ..." >
+                    </label>
+                    <label class="label--search__button">
+                        <button class="form-button search-button" type="submit" onclick="location.href='Search.html'"><i ></i> search</button>
+                    </label>
+                </div>
             </div>
         </div>
         <hr>
@@ -140,9 +144,8 @@
                 </div>
             </article>
         </div>
-    </main>
 </section>
-
+</main>
 <footer>
     <div class="footer">
         <img class="czu" src="https://www.czu.cz/cache/article-data/CZU_logo_bila%20-%20kopie.png" alt="CZU logo">
